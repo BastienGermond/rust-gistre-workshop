@@ -1,5 +1,9 @@
 pub fn factorial(n: i32) -> i32 {
-    todo!()
+    if n == 0 {
+        1
+    } else {
+        n * factorial(n - 1)
+    }
 }
 
 #[cfg(test)]
