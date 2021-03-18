@@ -1,5 +1,5 @@
 pub fn vec_strlen(vec: Vec<&str>) -> Vec<usize> {
-    todo!()
+    vec.iter().map(|v| v.len()).collect()
 }
 
 #[cfg(test)]

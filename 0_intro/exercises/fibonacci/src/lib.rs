@@ -1,5 +1,11 @@
 pub fn fibo(v: u32) -> u32 {
-    todo!()
+    if v == 0 {
+        0
+    } else if v == 1{
+        1
+    } else {
+        fibo(v - 1) + fibo(v - 2)
+    }
 }
 
 #[cfg(test)]
